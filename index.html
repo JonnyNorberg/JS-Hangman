@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>JS-Hangman</title>
+
+</head>
+<body>
+<div class="container">
+  <h1 class="">JS-Hangman</h1>
+  <div class="gissa"> <p>Fel gissningar: <span id='mistakes'>0</span> av <span id='maxWrong'></span> </p></div>
+  <div class="text-center">
+    <img class="smaller" id='hangmanPic' src="./images/0.png" alt="">
+
+    <!--Gissa här-->
+
+    <p>Gissa frukten:</p>
+    <p id="wordSpotlight"></p>
+    <div id="keyboard"><p></p></div>
+    <button class="btn btn-info" onClick="reset()">Börja om</button>
+  </div> 
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+</html>
